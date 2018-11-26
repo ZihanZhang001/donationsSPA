@@ -1,11 +1,12 @@
 describe("Home page", () => {
- 
+
   beforeEach(() => {
     cy.visit("/");
   });
 
   it("Shows a header", () => {
     cy.get(".vue-title").should('contain','Homer for President !!');
+    // cy.get("b > i").should('contain','Time for a change!!');
   });
 
   describe("Navigation bar", () => {
